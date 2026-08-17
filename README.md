@@ -4,6 +4,7 @@ Personal Homebrew tap.
 
 ```sh
 brew tap muarifer/tap
+brew trust muarifer/tap   # required on Homebrew 6+
 ```
 
 ## Casks
@@ -13,5 +14,5 @@ brew tap muarifer/tap
 | [`kitty-taskbar`](https://github.com/muarifer/kitty-taskbar) | Menu bar taskbar for kitty terminal windows and tabs |
 
 ```sh
-brew install --cask --no-quarantine kitty-taskbar
+brew install --cask kitty-taskbar
 ```

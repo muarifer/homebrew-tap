@@ -7,14 +7,15 @@ cask "kitty-taskbar" do
   desc "Menu bar taskbar for kitty terminal windows and tabs"
   homepage "https://github.com/muarifer/kitty-taskbar"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "KittyTaskbar.app"
 
   caveats <<~EOS
-    KittyTaskbar is ad-hoc signed (not notarized). Install with
-    --no-quarantine to skip the Gatekeeper prompt, or allow it under
-    System Settings > Privacy & Security on first launch.
+    KittyTaskbar is ad-hoc signed (not notarized). If Gatekeeper blocks
+    the first launch, allow it under System Settings > Privacy & Security,
+    or remove the quarantine attribute:
+      xattr -dr com.apple.quarantine /Applications/KittyTaskbar.app
 
     Requires kitty remote control in ~/.config/kitty/kitty.conf:
       allow_remote_control yes
