@@ -12,11 +12,6 @@ cask "kitty-taskbar" do
   app "KittyTaskbar.app"
 
   caveats <<~EOS
-    KittyTaskbar is ad-hoc signed (not notarized). If Gatekeeper blocks
-    the first launch, allow it under System Settings > Privacy & Security,
-    or remove the quarantine attribute:
-      xattr -dr com.apple.quarantine /Applications/KittyTaskbar.app
-
     Requires kitty remote control in ~/.config/kitty/kitty.conf:
       allow_remote_control yes
       listen_on unix:/tmp/kitty-{kitty_pid}
