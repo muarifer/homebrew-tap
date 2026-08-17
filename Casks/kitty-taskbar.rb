@@ -1,6 +1,6 @@
 cask "kitty-taskbar" do
-  version "1.0.0"
-  sha256 "311b23f8264a4ead88663ca0558d1d696c8747c39231f227c92b3aa2eeb8f111"
+  version "1.0.1"
+  sha256 "8681a2d0d3e707bf3f5983d4a1e44e24be933f1b67f499dbbaced937a4fb05d4"
 
   url "https://github.com/muarifer/kitty-taskbar/releases/download/v#{version}/KittyTaskbar-#{version}.zip"
   name "KittyTaskbar"
